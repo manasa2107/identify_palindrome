@@ -1,0 +1,10 @@
+def isp(n):
+    return(str(n)[::-1]==str(n))
+def rev(n):
+    return int(str(n)[::-1])
+n=int(input())
+while(1):
+    n+=rev(n)
+    if(isp(n)):
+        print(n)
+        break
